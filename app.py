@@ -34,7 +34,8 @@ def communicate():
 
 
 
-st.title("👯‍♀️AI  Chikuda teacher😈")st.image("post_637_20120904.png")
+st.title("👯‍♀️AI  Chikuda teacher😈")
+st.image("post_637_20120904.png")
 st.write("ChatBot based on ChatGPT3-5")
 
 user_input = st.text_input("Enter message!", key="user_input", on_change=communicate)
