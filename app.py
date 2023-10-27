@@ -5,7 +5,7 @@ import openai
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
 openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 openai.api_type = "azure"
-openai.api_base = "https://subzemi-ins1.openai.azure.com/"
+openai.api_base = "https://zemi.openai.azure.com/"
 openai.api_version = "2023-07-01-preview"
 
 # st.session_stateを使いメッセージのやりとりを保存
@@ -22,7 +22,7 @@ def communicate():
     messages.append(user_message)
 
     response = openai.ChatCompletion.create(
-        engine="subzemi",
+        engine="zemi",
         model="gpt-3.5-turbo",
         messages=messages
     )
